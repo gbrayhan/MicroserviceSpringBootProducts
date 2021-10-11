@@ -4,9 +4,7 @@ package com.springapp.serviceproducts.models.controllers;
 import com.springapp.serviceproducts.models.entity.Product;
 import com.springapp.serviceproducts.models.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,16 +14,20 @@ public class ProductController {
     @Autowired
     private IProductService productService;
 
-    @GetMapping("/list")
+    @GetMapping("/product")
     public List<Product> list() {
         return productService.findAll();
     }
 
 
-    @GetMapping("/list/{id}")
+    @GetMapping("/product/{id}")
     public Product details(@PathVariable Long id) {
         return productService.findById(id);
     }
 
+    @PostMapping("/product")
+    public Product saveProduct(@RequestBody Product product) {
+        return productService.createProduct(product);
+    }
 
 }

@@ -24,4 +24,7 @@ public class ProductService implements IProductService{
     public Product findById(Long id) {
         return productRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public Product createProduct(Product product) { return productRepository.save(product);}
 }
