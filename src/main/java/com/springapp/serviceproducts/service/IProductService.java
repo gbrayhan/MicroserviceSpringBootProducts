@@ -1,6 +1,6 @@
-package com.springapp.serviceproducts.models.service;
+package com.springapp.serviceproducts.service;
 
-import com.springapp.serviceproducts.models.entity.Product;
+import com.springapp.serviceproducts.entity.Product;
 
 import java.util.List;
 

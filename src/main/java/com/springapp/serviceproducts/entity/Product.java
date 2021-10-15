@@ -1,4 +1,4 @@
-package com.springapp.serviceproducts.models.entity;
+package com.springapp.serviceproducts.entity;
 
 
 import javax.persistence.*;

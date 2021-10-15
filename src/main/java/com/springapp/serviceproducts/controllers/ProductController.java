@@ -1,8 +1,8 @@
-package com.springapp.serviceproducts.models.controllers;
+package com.springapp.serviceproducts.controllers;
 
 
-import com.springapp.serviceproducts.models.entity.Product;
-import com.springapp.serviceproducts.models.service.IProductService;
+import com.springapp.serviceproducts.entity.Product;
+import com.springapp.serviceproducts.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

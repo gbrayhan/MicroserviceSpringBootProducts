@@ -1,7 +1,7 @@
-package com.springapp.serviceproducts.models.service;
+package com.springapp.serviceproducts.service;
 
-import com.springapp.serviceproducts.models.entity.Product;
-import com.springapp.serviceproducts.models.repository.ProductRepository;
+import com.springapp.serviceproducts.entity.Product;
+import com.springapp.serviceproducts.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
